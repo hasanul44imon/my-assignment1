@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding:0 20px;
+
+}
+.button {
+    border: 0;
+    cursor: pointer;
+}
+.button-primary {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 10px 47px;
+    border-radius: 12px;
+    background-color: rgba(255, 158, 3, 1)
+}
+.title{
+    font-size: 46px;
+    font-weight: 700px;
+    line-height: 58;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.display-flex{
+    display: flex;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.items {
+    gap: 32px;
+}
+.items li {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    cursor: pointer;
+}
+.site-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+}
+/* Hero section */
+.hero-section{
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.hero-content{
+    max-width: 640px;
+}
+.hero-title{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+}
+.hero-description{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.hero-img{
+    max-width: 468px;
+    height: 575px;
+    object-fit: cover;
+}
+.orange{
+    color:rgba(254, 163, 1, 1);
+}
+.sky-blue{
+    color:rgba(1, 172, 253, 1) ;
+}
+.button{
+    background-color:rgba(17, 17, 17, 1) ;
+    font-weight: px;
+    border-radius: 12px;
+    padding: 10px 47px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+}
