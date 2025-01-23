@@ -4,6 +4,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
 body{
     padding: 0;
     margin: 0;
@@ -55,6 +56,9 @@ ul{
     line-height: 30px;
     cursor: pointer;
 }
+.home-orange{
+    color:rgba(254, 163, 1, 1);
+}
 .site-title {
     font-size: 32px;
     font-weight: 700;
@@ -98,4 +102,56 @@ ul{
     line-height: 30px;
     font-size: 20px;
     color: rgba(255, 255, 255, 1);
+}
+/* standard curriculum section */
+.curriculum-bg {
+    margin-top: 40px;
+    padding: 60px 20px;
+    background-image: url(/assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    
+}
+.column{
+    box-sizing: border-box;
+    display: flex;border: 1px solid rgb(222, 245, 255);
+    border-radius: 18px;
+    box-shadow: inset;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 41px 50px;
+}
+.column img{
+    width: 136px;
+    height: 136px;
+    margin-bottom: 32px;
+}
+.column .column-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+
+}
+.column .column-description {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 33px;
+    margin-bottom: 38px;
+}
+
+.column .column-btn {
+    color: rgb(100, 200, 255);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28px;
+    transition: all 0.3s ease;
 }
