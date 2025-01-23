@@ -20,8 +20,10 @@ body{
     border: 0;
     cursor: pointer;
 }
-.button-primary {
+.button-primary{
     font-size: 20px;
+    border: 0;
+    color: #f7f7f7;
     font-weight: 700;
     line-height: 30px;
     padding: 10px 47px;
@@ -58,6 +60,15 @@ ul{
 }
 .home-orange a{
     color:rgba(254, 163, 1, 1);
+}
+.about-sky-blue a{
+    color: rgba(1, 172, 253, 1);
+}
+.facilities-blue{
+    color: rgba(5, 212, 223, 1);
+}
+.admission-purple {
+    color: rgba(93, 88, 239, 1);
 }
 .site-title {
     font-size: 32px;
@@ -148,10 +159,40 @@ ul{
     margin-bottom: 38px;
 }
 
-.column .column-btn {
+.button .column1 {
     color: rgb(100, 200, 255);
+}
+.button .column1{
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 80px;
     line-height: 28px;
     transition: all 0.3s ease;
+    border: none;
 }
+/* Story Section */
+.story-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.story {
+    width: 45%; /* Adjust width for PC */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.story h2 {
+    margin-top: 0;
+}
+
+/* Branding Section */
+.branding-section {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
