@@ -30,8 +30,8 @@ body{
 }
 .title{
     font-size: 46px;
-    font-weight: 700px;
-    line-height: 58;
+    font-weight: 700;
+    line-height: 58px;
 }
 a{
     text-decoration: none;
@@ -56,7 +56,7 @@ ul{
     line-height: 30px;
     cursor: pointer;
 }
-.home-orange{
+.home-orange a{
     color:rgba(254, 163, 1, 1);
 }
 .site-title {
@@ -107,7 +107,7 @@ ul{
 .curriculum-bg {
     margin-top: 40px;
     padding: 60px 20px;
-    background-image: url(/assets/bg.png);
+    background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
