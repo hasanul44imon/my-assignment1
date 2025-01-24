@@ -107,7 +107,7 @@ ul{
 }
 .button{
     background-color:rgba(17, 17, 17, 1) ;
-    font-weight: px;
+    font-weight: 700px;
     border-radius: 12px;
     padding: 10px 47px;
     line-height: 30px;
@@ -193,10 +193,11 @@ ul{
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 .container-boxes img{
     width: 100%;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 16px 10px 10px;
     background: rgb(217, 217, 217);
     display: block;
 }
@@ -206,27 +207,43 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-
-.view-all {
-    text-align: center;
-}
-.post-date {
+.blog-content .post-date {
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
+    color: white;
     font-style: normal;
     padding: 15px 20px;
     border-radius: 35px;
-    position: absolute;
     left: 38px;
     top: -30px;
     cursor: pointer;
+    position: absolute;
+}
+.post-date{
+    background-color: rgba(60, 216, 232, 1)
 }
 .box-description {
-    color: rgb(102, 102, 102);
-    font-size: 15px;
-    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    font-size: 17px;
+    font-weight: 700;
     line-height: 28px;
+}
+.blog-content {
+    background-color: var(--white);
+    border-radius: 0 0 16px 16px;
+    padding: 38px;
+}
+.blog-content {
+    position: relative;
+}
+p.button.view-all{
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 47px;
+    font-weight: 700;
+    line-height: 30px;
+
 }
 
 /* Media Queries for Responsiveness */
