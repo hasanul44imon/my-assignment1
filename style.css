@@ -210,6 +210,24 @@ h1 {
 .view-all {
     text-align: center;
 }
+.post-date {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 15px 20px;
+    border-radius: 35px;
+    position: absolute;
+    left: 38px;
+    top: -30px;
+    cursor: pointer;
+}
+.box-description {
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+}
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
