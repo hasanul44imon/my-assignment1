@@ -25,7 +25,7 @@ body{
     background-color: var(--secondary-color);
 }
 .button-primary:hover{
-    background-color: var(--secondary-color);
+    background-color: rgba(255, 158, 3, 1)
 }
 .button-primary{
     font-size: 20px;
