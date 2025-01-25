@@ -237,11 +237,11 @@ ul{
 }
 /* Story Section */
 .story-section{
-    background-color: url(../assets/bg.png);
     background-size: auto;
     background-repeat: repeat;
     background-position: top center;
     padding: 60px 0;
+    background-color: url(../assets/bg.png);
 }
 .container .title{
     text-align: center;
@@ -259,7 +259,7 @@ ul{
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 .container-boxes img{
     width: 100%;
@@ -285,9 +285,19 @@ h1 {
     top: -30px;
     cursor: pointer;
     position: absolute;
+    background-color: blueviolet;
 }
-.post-date{
-    background-color: rgba(60, 216, 232, 1)
+.blog-content .fun{
+    background-color: rgba(60, 216, 232, 1);
+    cursor: pointer;
+    position: absolute;
+    left: 38px;
+    top: -30px;
+    padding: 15px 20px;
+    border-radius: 35px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 136px;
+    
 }
 .box-description {
     color: rgba(0, 0, 0, 1);
@@ -305,6 +315,7 @@ h1 {
 }
 .text-align{
         text-align: center;
+        padding: 20px 0;
 }
 /* footer section  */
 .footer {
