@@ -19,11 +19,19 @@ body{
 .button {
     border: 0;
     cursor: pointer;
+    background-color: transparent;
+}
+.button:hover {
+    background-color: var(--secondary-color);
+}
+.button-primary:hover{
+    background-color: var(--secondary-color);
 }
 .button-primary{
     font-size: 20px;
     border: 0;
     color: #f7f7f7;
+    background-color: transparent;
     font-weight: 700;
     line-height: 30px;
     padding: 10px 47px;
@@ -34,6 +42,7 @@ body{
     font-size: 46px;
     font-weight: 700;
     line-height: 58px;
+    font-family: "Quicksand", serif;
 }
 a{
     text-decoration: none;
@@ -56,7 +65,7 @@ ul{
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
-    cursor: pointer;
+    cursor: pointer; 
 }
 .home-orange a{
     color:rgba(254, 163, 1, 1);
@@ -74,6 +83,20 @@ ul{
     font-size: 32px;
     font-weight: 700;
     line-height: 30px;
+}
+@media screen and (max-width: 576px) {
+    .button-primary {
+        padding: 6px 24px;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+    }
+
+    .title {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 33px;
+    }
 }
 /* Hero section */
 .hero-section{
@@ -158,19 +181,39 @@ ul{
     margin-top: 33px;
     margin-bottom: 38px;
 }
+.color .orange {
+    color:rgba(240, 170, 0, 1)
+}
+.color .orange{
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 28px;
+    transition: all 0.3s ease;
+    border: none;
+}
+.color .purple {
+    color:rgba(135, 0, 255, 1)
+}
+.color .purple{
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 28px;
+    transition: all 0.3s ease;
+    border: none;
+}
 
-.button .column1 {
+.color .sky-blue {
     color: rgb(100, 200, 255);
 }
-.button .column1{
-    font-size: 15px;
-    font-weight: 80px;
+.color sky-blue{
+    font-size: 35px;
+    font-weight: 800;
     line-height: 28px;
     transition: all 0.3s ease;
     border: none;
 }
 /* Story Section */
-.story-section .container {
+.story-section{
     background-color: url(../assets/bg.png);
     background-size: auto;
     background-repeat: repeat;
@@ -230,32 +273,26 @@ h1 {
     line-height: 28px;
 }
 .blog-content {
-    background-color: var(--white);
     border-radius: 0 0 16px 16px;
     padding: 38px;
 }
 .blog-content {
     position: relative;
 }
-.button.button{
-        background-color:rgba(17, 17, 17, 1) ;
-        border-radius: 8px;
-        padding: 10px 47px;
-        line-height: 30px;
-        font-weight: 700;
-        color: rgba(255, 255, 255, 1);
+.text-align{
+        text-align: center;
 }
 /* footer section  */
 .footer {
     background-color:rgba(1, 172, 253, 1) ;
     margin-top: 40px;
-    max-width: 1440px;
-    padding: 0;
+    padding: 123px 0 173px;
     margin: auto;
 }
 .footer-section {
     flex-direction: row;
     gap: 32px;
+    justify-content: space-between;
     
 }
 .footer-logo .site-title {
@@ -275,6 +312,11 @@ h1 {
 .about-school li {
     font-size: 20px;
     line-height: 25px;
+}
+.footer-logo img {
+    width: 83px;
+    height: 81px;
+    opacity: 100%;
 }
 
 
