@@ -22,11 +22,9 @@ body{
     background-color: transparent;
 }
 .button:hover {
-    background-color: var(--secondary-color);
+    background-color: rgba(240, 170, 0, 1);
 }
-.button-primary:hover{
-    background-color: rgba(255, 158, 3, 1)
-}
+
 .button-primary{
     font-size: 20px;
     border: 0;
@@ -34,9 +32,14 @@ body{
     background-color: transparent;
     font-weight: 700;
     line-height: 30px;
+    cursor: pointer;
     padding: 10px 47px;
     border-radius: 12px;
-    background-color: rgba(255, 158, 3, 1)
+    background-color: rgba(255, 158, 3, 1);
+}
+
+.button-primary:hover{
+    background-color: rgba(0, 0, 0, 1);
 }
 .title{
     font-size: 46px;
@@ -66,6 +69,10 @@ ul{
     font-weight: 700;
     line-height: 30px;
     cursor: pointer; 
+}
+
+.mobile-bar{
+    display: none;
 }
 .home-orange a{
     color:rgba(254, 163, 1, 1);
@@ -97,6 +104,8 @@ ul{
         font-weight: 700;
         line-height: 33px;
     }
+
+
 }
 /* Hero section */
 .hero-section{
@@ -117,7 +126,7 @@ ul{
     font-weight: 300;
     line-height: 25px;
 }
-.hero-img{
+.hero-img img{
     max-width: 468px;
     height: 575px;
     object-fit: cover;
@@ -154,8 +163,12 @@ ul{
 }
 .column{
     box-sizing: border-box;
-    display: flex;border: 1px solid rgb(222, 245, 255);
+    display: flex;
     border-radius: 18px;
+    border: 1px solid rgb(222, 245, 255);
+    border-radius: 18px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
     box-shadow: inset;
     text-align: center;
     align-items: center;
@@ -163,6 +176,16 @@ ul{
     justify-content: center;
     padding: 50px 41px 50px;
 }
+
+.column.box-2{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.column.box-3{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+
 .column img{
     width: 136px;
     height: 136px;
@@ -278,6 +301,7 @@ h1 {
 }
 .blog-content {
     position: relative;
+    background-color: white;
 }
 .text-align{
         text-align: center;
@@ -319,6 +343,10 @@ h1 {
     opacity: 100%;
 }
 
+.footer ul{
+    padding: 0;
+}
+
 
 /* Media Queries for Responsiveness */
 
@@ -326,4 +354,99 @@ h1 {
     header {
         border-bottom: 1px solid var(--secondary-color);
     }
+}
+
+
+@media screen and (max-width: 576px) {
+    .button-primary {
+        padding: 6px 24px;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+    }
+
+    .title {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 33px;
+    }
+
+    .hero-section{
+        display: inline-flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-title{
+        margin-top: 0;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .navbar .items, .navbar .site-title, .navbar .button-primary, .left-box{
+        display: none;
+    }
+
+    .mobile-bar{
+        display: block;
+    }
+
+    .mobile-bar i {
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .navbar{
+        border-bottom: 1px solid rgba(254, 163, 1, 1);
+    }
+
+
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog-content{
+        padding: 20px;
+    }
+
+    .blog-content .post-date{
+        padding: 6px 12px;
+        left: 10px;
+        top: -16px;
+    }
+
+.blog-content .box-description{
+    font-size: 10px;
+        font-weight: 700;
+        line-height: 17.5px;
+}
+
+.right-boxes{
+    margin-bottom: 30px;
+}
+
+    .footer{
+        padding: 50px 0 50px;
+    }
+
+
+    .footer-section{
+        display: block;
+    }
+
+    
+
+    ul li{
+        margin-top: 10px;
+    }
+
+    .social li{
+        margin-right: 5px;
+    }
+    
 }
